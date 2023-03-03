@@ -76,7 +76,7 @@ apply_colors () {
     local count=1
 
     # List the color-schemes
-    color_schemes=($(ls $_DIR))
+    color_schemes=($(ls $COLORS_DIR))
     for  in "${color_schemes[@]}"; do
         _name=$(echo $)
         echo ${ORANGE}"    [$count] ${_name%.*}"
